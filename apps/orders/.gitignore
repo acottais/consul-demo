@@ -1,0 +1,9 @@
+.gradle
+.settings
+.vs
+.vscode
+bin
+obj
+*.user
+*.zip
+packages

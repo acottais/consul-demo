@@ -1,0 +1,21 @@
+INSERT IGNORE INTO `products` (`ref`,`name`,`description`) VALUES 
+('REFP01',"mus.","Lorem ipsum dolor sit amet, consectetuer adipiscing")
+,('REFP02',"Donec","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur")
+,('REFP03',"in,","Lorem ipsum dolor sit amet,")
+,('REFP04',"luctus","Lorem ipsum dolor")
+,('REFP05',"tincidunt","Lorem ipsum dolor sit")
+,('REFP06',"ac","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sed")
+,('REFP07',"Maecenas","Lorem")
+,('REFP08',"scelerisque","Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+,('REFP09',"scelerisque","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sed")
+,('REFP10',"aliquet.","Lorem ipsum dolor sit");
+INSERT IGNORE INTO `products` (`ref`,`name`,`description`) VALUES ('REFP11',"rhoncus.","Lorem ipsum dolor")
+,('REFP12',"Suspendisse","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sed")
+,('REFP13',"condimentum","Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+,('REFP14',"dolor.","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur")
+,('REFP15',"nascetur","Lorem ipsum dolor sit")
+,('REFP16',"ornare,","Lorem ipsum dolor sit amet, consectetuer adipiscing")
+,('REFP17',"aliquet","Lorem ipsum dolor")
+,('REFP18',"velit.","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur")
+,('REFP19',"id","Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+,('REFP20',"cursus","Lorem ipsum dolor sit amet, consectetuer adipiscing");
