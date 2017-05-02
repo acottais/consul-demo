@@ -1,0 +1,12 @@
+
+##Consult-template for customers
+.\consul-template.exe -template "..\apps\customers\consul\customers.tpl:..\apps\customers\conf\customers.properties"
+
+## consul server
+.\consul-exe agent -dev
+
+## consul client
+\consul-exe kv put customers/prop/key1 1
+
+
+
