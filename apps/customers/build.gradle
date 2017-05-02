@@ -13,6 +13,7 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
+apply plugin: 'war'
 
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
@@ -21,6 +22,8 @@ repositories {
 	mavenCentral()
 }
 
+war.rootSpec.exclude "customers.properties"
+war.rootSpec.exclude "application.properties"
 
 dependencies {
 	compile('org.apache.cxf:cxf-spring-boot-starter-jaxrs:3.1.11')
@@ -28,4 +31,5 @@ dependencies {
 		compile('org.mariadb.jdbc:mariadb-java-client:latest.release')
 	compile('com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.4.4')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+	providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
 }

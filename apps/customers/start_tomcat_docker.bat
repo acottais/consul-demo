@@ -1,0 +1,1 @@
+docker run -it -v D:\consul-demo\apps\customers\build\libs\customers-0.0.1-SNAPSHOT.war:/usr/local/tomcat/webapps/customers.war -v D:\consul-demo\apps\customers\customers.xml:/usr/local/tomcat/conf/Catalina/localhost/customers.xml -v D:\consul-demo\apps\customers\conf:/etc/customers  -p 8080:8080  tomcat

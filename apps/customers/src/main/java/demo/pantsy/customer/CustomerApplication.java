@@ -1,11 +1,16 @@
 package demo.pantsy.customer;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -16,7 +21,15 @@ import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan
-public class CustomerApplication {
+@PropertySource("classpath:customers.properties")
+public class CustomerApplication extends SpringBootServletInitializer {
+ 
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(CustomerApplication.class);
+    }
+
+
 
 //provide Jackson for CXF
 	@Bean
